@@ -16,11 +16,11 @@
             <h2>Plan Details</h2>
             <div class="input-field">
                 <label for="planProposes">Plan Proposes:</label>
-                <input type="number" id="planProposes" min="0" value="260.00">
+                <input type="number" id="planProposes" min="0" value="0.00">
             </div>
             <div class="input-field">
                 <label for="months">Months:</label>
-                <input type="number" id="months" min="1" value="60">
+                <input type="number" id="months" min="1" value="1">
             </div>
         </section>
 
@@ -28,7 +28,7 @@
             <h2>Analysis of Distribution</h2>
             <div class="input-field">
                 <label for="attorneysFees">Attorney's Fees:</label>
-                <input type="number" id="attorneysFees" min="0" value="3500.00">
+                <input type="number" id="attorneysFees" min="0" value="0.00">
             </div>
             <div class="input-field">
                 <label for="courtCosts">Court Costs:</label>
@@ -36,21 +36,21 @@
             </div>
             <div class="input-field">
                 <label for="trusteeSetUpFee">Trustee's Set-Up Fee:</label>
-                <input type="number" id="trusteeSetUpFee" min="0" value="11.00">
+                <input type="number" id="trusteeSetUpFee" min="0" value="0.00">
             </div>
             <div class="input-field">
                 <label for="priorityClaims">Priority Claims:</label>
-                <input type="number" id="priorityClaims" min="0" value="1200.00">
+                <input type="number" id="priorityClaims" min="0" value="0.00">
             </div>
             <div class="input-field">
                 <label for="allowedSecuredClaims">Allowed Secured Claims:</label>
-                <input type="number" id="allowedSecuredClaims" min="0" value="7995.00">
+                <input type="number" id="allowedSecuredClaims" min="0" value="0.00">
             </div>
         </section>
 
         <div class="input-field">
             <label for="allowedUnsecured">Allowed Unsecured Claims:</label>
-            <input type="number" id="allowedUnsecured" min="0" value="24000.00">
+            <input type="number" id="allowedUnsecured" min="0" value="0.00">
         </div>
 
         <section class="analysis-section">
@@ -64,6 +64,13 @@
                 <p id="percentageResult"></p>
             </div>
         </section>
+    </div>
+    <div id="amortized-values" class="amortized-values">
+        <ul>
+            <li><span id="six-percent"></span> Amortized @ 6%</li>
+            <li><span id="nine-percent"></span> Amortized @ 9%</li>
+            <li><span id="twelve-percent"></span> Amortized @ 12%</li>
+        </ul>
     </div>
     <script src="script.js"></script>
 </body>
